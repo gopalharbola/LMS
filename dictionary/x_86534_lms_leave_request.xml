@@ -2,5 +2,9 @@
 <database>
     <element label="Leave Request" max_length="40" name="x_86534_lms_leave_request" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Requested By" max_length="32" name="requested_by" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="requested_by"/>
+        </index>
     </element>
 </database>
