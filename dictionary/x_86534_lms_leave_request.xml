@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Leave Request" max_length="40" name="x_86534_lms_leave_request" type="collection">
+    <element audit="true" label="Leave Request" max_length="40" name="x_86534_lms_leave_request" type="collection">
         <element label="From" max_length="40" name="from" type="glide_date"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Remark" max_length="100" name="remark" type="string"/>
